@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Height Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <p>Header</p>
+    </header>
+
+    <aside class="dashboard-sidebar">
+        <div class="logo">
+            <img src="https://edgarandes.com/wp-content/uploads/2025/03/cropped-logo-w-100x100.png" alt="">
+        </div>
+        <button type="button" id="resize"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+
+        <p>sidebar</p>
+    </aside>
+
+    <main class="dashboard-main">
+        <p>Main Content</p>
+    </main>
+
+    <footer class="dashboard-footer">
+        <p>Footer</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+<script>
+    const resizeBtn = document.getElementById('resize');
+    resizeBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.classList.toggle('sb-expand');
+        resizeBtn.querySelector('ion-icon').setAttribute('name',
+            document.body.classList.contains('sb-expand') ? 'close-outline' : 'chevron-forward-outline'
+        );
+    });
+</script>
