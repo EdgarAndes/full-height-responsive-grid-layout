@@ -42,4 +42,6 @@ This template is designed as a clean starting point for creating custom dashboar
 </p>
 
 <h2>🖼️ Demo Screenshot</h2>
-<p>To follows</p>
+<img width="948" height="904" alt="image" src="https://github.com/user-attachments/assets/d04bab73-d910-46bf-9376-c6dd290f205c" />
+
+
